@@ -6,7 +6,7 @@
   <title>William A. Hearn</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/ChatGPT Image May 2, 2025, 07_48_05 PM.png" type="image/png" />
+  <link rel="icon" href="ChatGPT Image Jul 14, 2025, 11_27_40 AM.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -25,8 +25,15 @@
                 <span>@williamhearn21</span>
               </a>
             </div>
+
+            <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
           
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
               <li><a href="experience.html">Experience</a></li>  
               <li><a href="work.html">My Work</a></li>
               <li><a href="about.html">About Me</a></li>
@@ -35,27 +42,34 @@
           </nav>          
             
         <div class="hero-content">
-          <img src="images/IMG_2601.jpg" alt="Pennock Systems Logo" class="hero-logo" />
+          <img src="IMG_2601.jpg" alt="William Hearn" class="hero-logo" />
           <h1 class="typewriter">
             <span id="typing-text"></span>
           </h1>
           <p>Because Normal Resumes Are Boring...</p>
-          <a href="library.html" class="btn">Explore My Projects</a>
+          <a href="work.html" class="btn">Explore My Projects</a>
           <!--Maybe insert short video here-->
 
   <!-- New containers -->
-  <div class="container-row">
-    <div class="info-box">
-      <h3><span class="typing-h3" data-text="Security First Mindset"></span></h3>
-      <p>From secure coding principles to risk assessment and compliance frameworks, I proactively design solutions that minimize vulnerabilities and safeguard sensitive information.</p>
-    </div>
-    <div class="info-box">
-      <h3><span class="typing-h3" data-text="Data Driven Results"></span></h3>
-      <p>By combining data analysis with automation and intelligent design, I create solutions that not only solve problems but also optimize workflows and enhance operational efficiency.</p>
-    </div>
-  </div>  
+<div class="container-row">
+  <div class="info-box">
+    <h3><span class="typing-h3" data-text="Security First Mindset"></span></h3>
+    <p>From secure coding principles to risk assessment and compliance frameworks, I proactively design solutions that minimize vulnerabilities and safeguard sensitive information.</p>
+  </div>
+  <div class="info-box">
+    <h3><span class="typing-h3" data-text="Data Driven Results"></span></h3>
+    <p>By combining data analysis with automation and intelligent design, I create solutions that not only solve problems but also optimize workflows and enhance operational efficiency.</p>
+  </div>
+  <div class="info-box">
+    <h3><span class="typing-h3" data-text="AI Development"></span></h3>
+    <p>I engineer and deploy intelligent chatbots that integrate with external APIs, support multilingual functionality, and deliver interactive, personalized user experiences across platforms.</p>
+  </div>
+  <div class="info-box">
+    <h3><span class="typing-h3" data-text="Web Design & Development"></span></h3>
+    <p>From concept to launch, I designed and developed this interactive resume website — blending modern UI/UX design with responsive, mobile-friendly development practices.</p>
   </div>
 </div>
+
 
     </header>
     <footer class="site-footer">
@@ -63,7 +77,14 @@
           <p>&copy; 2025 William A. Hearn. All rights reserved.</p>
         </div>
       </footer>
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+</script>
   </body>
 <script src="script.js"></script>
 </html>
-
