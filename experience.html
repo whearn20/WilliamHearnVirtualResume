@@ -6,6 +6,7 @@
   <title>Experience | William A. Hearn</title>
   <link rel="stylesheet" href="experience.css" />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="ChatGPT Image Jul 14, 2025, 11_27_40 AM.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -28,6 +29,11 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     </nav>
   </div>
 <body>
@@ -50,6 +56,15 @@
     <li>Integrated third-party APIs (weather, stock, scheduling) into chatbot logic to provide dynamic, context-aware user responses.</li>
     <li>Collaborated with IT, and compliance teams to align operations with NIST, HIPAA, and PCI-DSS frameworks using GRC tools and SIEM dashboards.</li>
     <li>Developed automated documentation systems and audit prep workflows to support government RFPs, post-acquisition due diligence, and regulatory readiness.</li>
+  </ul>
+</section>
+
+<section class="experience-card fade-in">
+  <h2>Cybersecurity Professional Certification</h2>
+  <h3>Issuing Organization: Google · November 2024</h3>
+  <ul>
+    <li>Designed to prepare individuals for roles in cybersecurity. Topics include threat analysis, risk mitigation, network security, and security operations.</li>
+    <li>Hands on experience with tools such as Wireshark, Python, Linux, and SIEM Dashboards while exploring frameworks such as NIST & ISO.</li>
   </ul>
 </section>
 
@@ -125,7 +140,7 @@
   </main>
 
 <footer class="experience-footer">
-  <a href="files/HearnResume'25.pdf" download class="download-btn" aria-label="Download Resume">
+  <a href="HearnResume'25.pdf" download class="download-btn" aria-label="Download Resume">
     Download My Resume
   </a>
 </footer>
@@ -162,7 +177,7 @@
   }
 
   // Typing animation for <p>
-  const text = "Business Analytics, Information Security, AI Development/Implementation, & Automation Strategies.";
+  const text = "Business Analytics, Information Security, AI Development, & Automation Strategies.";
   const typedText = document.getElementById("typed-text");
 
   let j = 0;
@@ -176,6 +191,11 @@
 
   // Start heading first
   typeHeading();
+
+  function toggleMobileMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+
 </script>
 </body>
 </html>
