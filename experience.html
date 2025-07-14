@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | William A. Hearn</title>
+  <link rel="stylesheet" href="experience.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">William A. Hearn</a>
+      </div>
+
+      <div class="nav-center">
+        <a href="https://www.linkedin.com/in/williamhearn21/" target="_blank" class="instagram-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          <span>@williamhearn21</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+<body>
+  <header class="experience-header">
+    <h1 id="typed-heading" class="typed-heading"></h1>
+    <p id="typed-text" class="typed-text"></p>
+  </header>
+
+  <main class="experience-container">
+
+<section class="experience-card fade-in">
+  <h2>Analyst & Information Security Compliance Officer</h2>
+  <h3>Advanced Remarketing Services · May 2021 – Present</h3>
+  <ul>
+    <li>Applied business analytics to drive operational improvements and identify process inefficiencies, supporting executive decision-making with data-backed insights.</li>
+    <li>Led cross-functional data analysis initiatives to monitor KPIs, track contract compliance, and streamline monthly reporting cycles.</li>
+    <li>Engineered AI-powered, multilingual chatbot platforms using Python, JS, and OpenAI APIs — integrated TTS/STT for human-like conversations to enhance support scalability.</li>
+    <li>Designed and deployed responsive chatbot UIs with dynamic elements using Visual Studio Code and Git, aligning with brand and UX best practices.</li>
+    <li>Automated ETL-style workflows and built interactive dashboards using Python, Google Apps Script, and VBA — enabling real-time compliance tracking and reporting.</li>
+    <li>Integrated third-party APIs (weather, stock, scheduling) into chatbot logic to provide dynamic, context-aware user responses.</li>
+    <li>Collaborated with IT, and compliance teams to align operations with NIST, HIPAA, and PCI-DSS frameworks using GRC tools and SIEM dashboards.</li>
+    <li>Developed automated documentation systems and audit prep workflows to support government RFPs, post-acquisition due diligence, and regulatory readiness.</li>
+  </ul>
+</section>
+
+<section class="experience-card fade-in">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-section">
+
+    <h3>Business Analytics & Visualization</h3>
+    <div class="skills-grid">
+    <span class="skill-badge">Excel</span>
+    <span class="skill-badge">Tableau</span>
+    <span class="skill-badge">Google Analytics</span>
+    <span class="skill-badge">Google Sheets</span>
+    <span class="skill-badge">Power BI</span>
+    <span class="skill-badge">Looker</span>
+    <span class="skill-badge">Google Data Studio</span>
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">SQL (Querying & Reporting)</span>
+    <span class="skill-badge">VBA Macros</span>
+    </div>
+
+    <h3>Languages & Tools</h3>
+    <div class="skills-grid">
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">SQL</span>
+      <span class="skill-badge">JavaScript</span>
+      <span class="skill-badge">HTML/CSS</span>
+      <span class="skill-badge">VBA</span>
+      <span class="skill-badge">Google Apps Script</span>
+    </div>
+
+    <h3>AI & Automation</h3>
+    <div class="skills-grid">
+      <span class="skill-badge">Chatbots</span>
+      <span class="skill-badge">LLMs (OpenAI)</span>
+      <span class="skill-badge">TensorFlow</span>
+      <span class="skill-badge">ETL Pipelines</span>
+      <span class="skill-badge">Natural Language Processing (NLP)</span>
+      <span class="skill-badge">Low Code Platforms (Power Automate)</span>
+      <span class="skill-badge">Conversational AI Design</span>
+    </div>
+
+    <h3>Security & Compliance</h3>
+    <div class="skills-grid">
+      <span class="skill-badge">NIST RMF</span>
+      <span class="skill-badge">HIPAA</span>
+      <span class="skill-badge">PCI-DSS</span>
+      <span class="skill-badge">GRC Tools</span>
+      <span class="skill-badge">SIEM Dashboards</span>
+      <span class="skill-badge">Policy Development</span>
+      <span class="skill-badge">Policy Audit</span>
+    </div>
+
+    <h3>Platforms</h3>
+    <div class="skills-grid">
+      <span class="skill-badge">VS Code</span>
+      <span class="skill-badge">Gemini</span>
+      <span class="skill-badge">GitHub (Version Control)</span>
+      <span class="skill-badge">Archer</span>
+      <span class="skill-badge">Linux (Ubuntu)</span>
+      <span class="skill-badge">AWS</span>
+    </div>
+
+    <h3>Cloud & DevOps</h3>
+    <div class="skills-grid">
+      <span class="skill-badge">CI/CD Concepts</span>
+      <span class="skill-badge">Git Version Control</span>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+<footer class="experience-footer">
+  <a href="files/HearnResume'25.pdf" download class="download-btn" aria-label="Download Resume">
+    Download My Resume
+  </a>
+</footer>
+
+<script>
+  // Fade-in logic
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.2 };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('appear');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  // Typing animation for <h1>
+  const headingText = "Experience & Skills";
+  const headingTarget = document.getElementById("typed-heading");
+
+  let i = 0;
+  function typeHeading() {
+    if (i < headingText.length) {
+      headingTarget.textContent += headingText.charAt(i);
+      i++;
+      setTimeout(typeHeading, 60); // slower typing for header
+    } else {
+      // After heading finishes, start subheading
+      typeChar();
+    }
+  }
+
+  // Typing animation for <p>
+  const text = "Business Analytics, Information Security, AI Development/Implementation, & Automation Strategies.";
+  const typedText = document.getElementById("typed-text");
+
+  let j = 0;
+  function typeChar() {
+    if (j < text.length) {
+      typedText.textContent += text.charAt(j);
+      j++;
+      setTimeout(typeChar, 40);
+    }
+  }
+
+  // Start heading first
+  typeHeading();
+</script>
+</body>
+</html>
