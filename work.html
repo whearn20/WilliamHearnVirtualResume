@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Work | Pennock Systems</title>
+  <title>My Work | William A. Hearn</title>
   <link rel="stylesheet" href="work.css" />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/ChatGPT Image May 2, 2025, 07_48_05 PM.png" type="image/png" />
+  <link rel="icon" href="ChatGPT Image Jul 14, 2025, 11_27_40 AM.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -29,6 +29,11 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     </nav>
 
   <!-- Hero Section -->
@@ -46,7 +51,7 @@
   <!-- Portfolio Section -->
   <section class="portfolio-grid">
     <div class="project-card">
-      <img src="images/Screenshot 2025-07-14 102316.png" alt="Lanaguage Bot">
+      <img src="Screenshot 2025-07-14 102316.png" alt="Lanaguage Bot">
       <div class="project-details">
         <h3>Multi-Lingual Personal Assistant</h3>
         <p>Multilingual chatbot featuring CRM integration, custom UI, and real-time support logic. Includes extensive API integration to deliver real-time data and support in 10 languages.</p>
@@ -55,7 +60,7 @@
     </div>
 
     <div class="project-card">
-      <img src="images/Screenshot 2025-07-14 093108.png" alt="Learn to Code">
+      <img src="Screenshot 2025-07-14 093108.png" alt="Learn to Code">
       <div class="project-details">
         <h3>Create Your Own Chatbot Course</h3>
         <p>An ongoing personal project consisting of 10 modules designed to teach users how to build custom, high-performance AI chatbots. Each module includes five sub-lessons, interactive quizzes, and a comprehensive end-of-module assessment. </p>
@@ -64,16 +69,16 @@
     </div>
 
     <div class="project-card">
-      <img src="images/coordiates.jpeg" alt="Longitude & Latitude Automation">
+      <img src="coordiates.jpeg" alt="Longitude & Latitude Automation">
       <div class="project-details">
         <h3>Longitude & Latitude Automation</h3>
         <p>Optimized marketing initiatives by automating spreadsheets using longitude and latitude coordinates to identify target locations within a 50-mile radius. Implemented a custom toolbar to enhance navigation and streamline workflow efficiency.</p>
-        <span class="project-tags">Web Dev • Consulting • Tech • Education</span>
+        <span class="project-tags">Automation • Data • Apps Script • Toolbar Creation</span>
       </div>
     </div>
 
     <div class="project-card">
-        <img src="images/phonto.png" alt="Veteran Support Assistant">
+        <img src="phonto.png" alt="Veteran Support Assistant">
         <div class="project-details">
           <h3>Veteran Support Assistant</h3>
           <p>An ongoing personal project designed to support military veterans with 24/7 access to assistance. The AI bot functions as both a graphical interface (GUI) and voice-activated assistant, utilizing Speech-to-Text and Text-to-Speech technologies. Integrated APIs enable a human-like tone to promote comfort and trust. The bot offers breathing exercises, mental health tips, post-military career guidance, and VA benefits information. In the future, I aim to collaborate with medical and psychological professionals to ensure the bot delivers accurate and meaningful mentorship.</p>
@@ -82,7 +87,7 @@
       </div>
 
       <div class="project-card">
-        <img src="images/powerbi2.jpg" alt="Power BI Dashboard">
+        <img src="powerbi2.jpg" alt="Power BI Dashboard">
         <div class="project-details">
           <h3>Data Visualization</h3>
           <p>Designed and developed a dynamic Power BI dashboard to analyze the intersection of metal market pricing, vehicle production trends, CPI Index, CO₂ emissions, and transportation activity across the U.S.</p>
@@ -91,7 +96,7 @@
       </div>
 
     <div class="project-card">
-      <img src="images/Screenshot 2025-07-14 103448.png" alt="Brandwood Ag Services Screenshot">
+      <img src="Screenshot 2025-07-14 103448.png" alt="Brandwood Ag Services Screenshot">
       <div class="project-details">
         <h3>Website & AI Development</h3>
         <p>Full-stack website and AI chatbot development featuring a custom interface and real-time API integrations for GPT, CRM, and 24/7 support.</p>
@@ -107,12 +112,22 @@
     <a href="contact.html" class="cta-button">Get in Touch</a>
   </section>  
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 William A. Hearn. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="work.js"></script>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 William A. Hearn. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- External JS file -->
+<script src="work.js"></script>
+
+<!-- Inline script for hamburger toggle -->
+<script>
+  function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
