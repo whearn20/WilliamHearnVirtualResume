@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Pennock Systems</title>
+  <title>Contact Me | William A. Hearn</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="services.css" />
   <link rel="stylesheet" href="contact.css" />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/ChatGPT Image May 2, 2025, 07_48_05 PM.png" type="image/png" />
+  <link rel="icon" href="ChatGPT Image Jul 14, 2025, 11_27_40 AM.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -31,6 +31,11 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     </nav>
 
   <!-- Hero Section -->
@@ -64,7 +69,7 @@
       </div>
 
       <!-- Optional: redirect after submission -->
-      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_next" value="https://pennocksystems.github.io/WilliamHearnVirtualResume/thankyou.html">
 
       <!-- Optional: anti-spam honeypot -->
       <input type="text" name="_gotcha" style="display:none">
@@ -81,6 +86,11 @@
     </div>
   </footer>
   <script src="contact.js"></script>
+  <script>
+  function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
-
