@@ -6,6 +6,7 @@
   <title>About Me | William A. Hearn</title>
   <link rel="stylesheet" href="about.css" />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="ChatGPT Image Jul 14, 2025, 11_27_40 AM.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -28,6 +29,11 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     </nav>
   </div>
 <body>
@@ -41,7 +47,7 @@
 <section class="experience-card fade-in">
   <h2>The Drive Behind the Data.</h2>
   <p>
-    Before diving into the world of business analytics, information security, and AI/ML, I spent five years competing as a Division I college baseball player. I earned my undergraduate degree in Business Administration from the University of San Francisco, where I took the mound as a left-handed relief pitcher. My journey continued at Oakland University, where I pursued graduate studies in Management Information Systems while still competing as a pitcher.
+    Before diving into the world of business analytics, information security, and AI/ML, I spent five years competing as a Division I college baseball player. I earned my undergraduate degree in Business Administration from the University of San Francisco, where I took the mound as a left-handed relief pitcher, and was named a member of the WCC All-Academic Team twice. My journey continued at Oakland University, where I pursued graduate studies in Management Information Systems while still competing as a pitcher.
   </p><br><br>
   <p>
     Off the field, in airports, hotels, and long bus rides I taught myself to code and began experimenting with AI-powered automation. I knew that the accelerating shift toward machine learning and intelligent systems would reward those who acted early, and I made it my mission to be one of them.
@@ -57,12 +63,12 @@
 <section class="photo-collage fade-in">
   <h2>My Journey in Pictures</h2>
   <div class="collage-grid">
-    <img src="images/IMG_8873.jpg" alt="University of San Francisco Baseball" class="grid-wide" />
-    <img src="images/IMG_8576.jpg" alt="Graduation Day" />
-    <img src="images/IMG_7985.JPG" alt="Cape Cod Baseball League Championship" class="grid-wide" />
-    <img src="images/IMG_1175.JPG" alt="Oakland University v. Michigan State" />
-    <img src="images/IMG_8267.jpg" alt="Event Volunteer at San Francisco Giants" />
-    <img src="images/IMG_1311.jpg" alt="Oakland University Baseball" class="crop-top" />
+    <img src="IMG_8873.jpg" alt="University of San Francisco Baseball" class="grid-wide" />
+    <img src="IMG_8576.jpg" alt="Graduation Day" />
+    <img src="IMG_7985.JPG" alt="Cape Cod Baseball League Championship" class="grid-wide" />
+    <img src="IMG_1175.JPG" alt="Oakland University v. Michigan State" />
+    <img src="IMG_8267.jpg" alt="Event Volunteer at San Francisco Giants" />
+    <img src="IMG_1311.jpg" alt="Oakland University Baseball" class="crop-top" />
   </div>
 </section>
 
@@ -71,25 +77,25 @@
   <div class="volunteer-tiles">
     
     <div class="volunteer-tile">
-      <img src="images/h4h2.png" alt="Habitat for Humanity Logo" class="volunteer-logo" />
+      <img src="h4h2.png" alt="Habitat for Humanity Logo" class="volunteer-logo" />
       <h3>Habitat for Humanity</h3>
       <p>Served as a Public Relations Specialist supporting awareness campaigns and local event initiatives.</p>
     </div>
 
     <div class="volunteer-tile">
-      <img src="images/sfg.png" alt="SF Giants Logo" class="volunteer-logo" />
+      <img src="sfg.png" alt="SF Giants Logo" class="volunteer-logo" />
       <h3>San Francisco Giants</h3>
-      <p>Assisted with fan engagement and logistics during home games as an Event Volunteer.</p>
+      <p>Assisted with fan engagement events.</p>
     </div>
 
     <div class="volunteer-tile">
-      <img src="images/IMG_1311.jpg" alt="Gilroy Rodeo Logo" class="volunteer-logo" />
+      <img src="Logo (1).png" alt="Gilroy Rodeo Logo" class="volunteer-logo" />
       <h3>Gilroy Rodeo</h3>
       <p>Supported the sponsorship team, helping coordinate brand outreach and event materials.</p>
     </div>
 
     <div class="volunteer-tile">
-      <img src="images/ou1.png" alt="OU CARES" class="volunteer-logo" />
+      <img src="ou1.png" alt="OU CARES" class="volunteer-logo" />
       <h3>Oakland University</h3>
       <p>Given the opportunity to make a difference in the lives of people impacted by Autism Spectrum Disorder.</p>
     </div>
@@ -137,7 +143,7 @@
   }
 
   // Typing animation for <p>
-  const text = "Athlete Turned Analyst. A Bit About My Journey...";
+  const text = "Athlete To Analyst. A Bit About My Journey...";
   const typedText = document.getElementById("typed-text");
 
   let j = 0;
@@ -151,6 +157,11 @@
 
   // Start heading first
   typeHeading();
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('open');
+}
 </script>
 </body>
 </html>
