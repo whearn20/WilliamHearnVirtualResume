@@ -63,12 +63,24 @@ body {
   }
   
   /* Center the middle section content horizontally */
-  .nav-center {
-  position: absolute;
-  left: 48%; /* Move slightly left */
-  transform: translateX(-50%);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
 }
 
+.nav-left,
+.nav-center,
+.nav-links {
+  flex: 1;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
   
   /* Align left and right to start and end respectively */
   .nav-left {
@@ -463,10 +475,6 @@ nav ul li a:hover {
     gap: 0.2rem;
   }
 }
-
-  .nav-center {
-    margin-left: 1rem; /* <-- added shift */
-  }
 
 @media (min-width: 769px) {
   .nav-links {
